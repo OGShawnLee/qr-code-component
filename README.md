@@ -21,7 +21,7 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### Links
 
-- Solution URL: [To be added](https://your-solution-url.com)
+- Solution URL: [Right here!](https://www.frontendmentor.io/solutions/qr-code-component-built-with-svelte-windicss-and-vite-as-build-tool-SJE_Mk8Qq)
 - Live Site URL: [Deployed on Vercel](https://qr-code-component-navy.vercel.app/)
 
 ## My process
