@@ -1,34 +1,35 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import QRCodeImage from "./assets/image-qr-code.png";
+import { Fragment } from "react";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
+    <Fragment>
+      <main className="max-w-xs p-4 bg-white rounded-2xl shadow-xl">
+        <img className="w-full h-full rounded-xl aspect-square" src={QRCodeImage} alt="QR Code" />
+        <div className="px-3 text-center">
+          <h1 className="text-2xl font-bold text-slate-dark">
+            Improve your front-end skills by building projects
+          </h1>
+          <p>
+            Scan the QR code to visit Frontend Mentor and take your coding skills to the next
+            level.
+          </p>
+        </div>
+      </main>
+      <footer className="fixed bottom-0 max-w-xs">
+        <p className="text-center text-sm text-slate-dark">
+          <a className="font-bold" href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener noreferrer">
+            Frontend Mentor
+          </a>
+          {" "}
+          -
+          {" "}
+          <a className="font-bold" href="https://www.frontendmentor/profile/OGShawnLee" target="_blank">
+            OGShawnLee
+          </a>
         </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+      </footer>
+    </Fragment>
   )
 }
 
